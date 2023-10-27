@@ -80,7 +80,7 @@ public class abrirgo {
         WebElement select = driver.findElement(By.xpath("//select[@multiple='multiple']"));
         Select dropdoSelect = new Select(select);
         dropdoSelect.selectByIndex(3);
-
+        // Tiempo de espera
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         System.out.println("Seleccion completada");
     }
